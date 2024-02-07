@@ -69,13 +69,13 @@ header nav .container {
     flex-wrap: wrap;
 }
 
-header nav .figure a {
+header nav figure a {
     display: block;
-    max-width: 6.25rem
+    max-width: 6.25rem;
 }
 
 header figure {
-    width: 80%calc(100% - 1.875rem);
+    width: calc(100% - 1.875rem);
     padding: 1.25rem 0;
 }
 
@@ -83,7 +83,6 @@ header .hamburguesa {
     width: 1.875rem;
     padding: 1.25rem 0;
     cursor: pointer;
-
 }
 
 header .menu {
@@ -100,22 +99,59 @@ header .menu a {
     width: 100%;
     text-decoration: none;
     padding: 1.25rem;
+    text-align: center;
     border-bottom: 1px solid #aaa;
     color: #aaa;
 }
+
 
 header .menu li:last-child a {
     border-bottom: 0;
 }
 
-header .activo {
+header .menu .activo {
     color: var(--colorprincipal);
+}
+
+/* final header */
+
+/* inicio footer */
+
+footer {
+    background-color: var(--colorsecundario);
+    text-align: center;
+    color: white;
+    padding: 1.25rem 0rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: var(--colorprincipal)
+    }
+}
+
+.flecha a {
+    font-size: 300%;
+    color: var(--colorprincipal);
+    position: fixed;
+    bottom: 3.75rem;
+    right: 0.625rem;
 }
 
 
 
+/* fin footer */
 
-/* inicio de mediaqueris */
+
+
+/* inicio mequeries */
+
 @media(min-width: 48rem) {
     header .nav-top .container {
         justify-content: space-between;
@@ -131,82 +167,31 @@ header .activo {
             font-size: 110%;
         }
     }
-<<<<<<< HEAD
 
     footer {
-        text-align: left
+        text-align: left;
     }
-=======
->>>>>>> feature-header
 }
 
-@media(min-whidt 62.75rem; ) {
-
+@media(min-width: 62.75rem) {
     header .hamburguesa {
         display: none;
+    }
 
+    header nav .container {
+        flex-wrap: nowrap;
+    }
+
+    header .menu {
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: end;
+    }
+
+    header .menu a {
+        border: 0px;
+        padding: 1.25rem 0rem 1.25rem 2.5rem;
     }
 }
 
-<<<<<<< HEAD
-/* fin mediaqueris */
-
-=======
->>>>>>> feature-header
-header nav .container {
-    flex-wrap: nowrap;
-
-
-}
-
-header .menu {
-
-    padding: 0.5rem 0;
-    display: flex;
-    justify-content: end;
-
-}
-
-
-
-header .menu a {
-    border: 0px;
-    padding: 1.25rem 0rem 1.25rem 2.5rem;
-}
-
-<<<<<<< HEAD
-
-/* final header */
-
-/* inicio footer */
-footer {
-    background-color: var(--colorsecundario);
-    text-align: center;
-    color: white;
-    padding: 1.25rem 0rem;
-    position: fixed;
-    bottom: 0;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-
-    &:hover {
-        color: var(--colorprincipal);
-    }
-
-}
-
-.flecha {
-
-    font-size: 300%;
-    color: var(--colorprincipal);
-    position: fixed;
-    bottom: 4.375rem;
-    right: 0;
-
-}
-=======
-/* fin mediaqueris */
->>>>>>> feature-header
+/* fin mequeries */
