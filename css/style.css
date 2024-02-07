@@ -131,10 +131,13 @@ header .activo {
             font-size: 110%;
         }
     }
+<<<<<<< HEAD
 
     footer {
         text-align: left
     }
+=======
+>>>>>>> feature-header
 }
 
 @media(min-whidt 62.75rem; ) {
@@ -145,8 +148,11 @@ header .activo {
     }
 }
 
+<<<<<<< HEAD
 /* fin mediaqueris */
 
+=======
+>>>>>>> feature-header
 header nav .container {
     flex-wrap: nowrap;
 
@@ -168,6 +174,7 @@ header .menu a {
     padding: 1.25rem 0rem 1.25rem 2.5rem;
 }
 
+<<<<<<< HEAD
 
 /* final header */
 
@@ -200,3 +207,6 @@ footer a {
     right: 0;
 
 }
+=======
+/* fin mediaqueris */
+>>>>>>> feature-header
